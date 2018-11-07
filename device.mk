@@ -59,6 +59,8 @@ PRODUCT_PACKAGES += \
     android.hardware.lights-service.qti
 
 # Overlays
+PRODUCT_ENFORCE_RRO_TARGETS += *
+
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
