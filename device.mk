@@ -174,6 +174,9 @@ PRODUCT_PACKAGES += \
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# Default is nosdcard, S/W button enabled in resource
+PRODUCT_CHARACTERISTICS := nosdcard
+
 # Display
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
