@@ -1,0 +1,2 @@
+# Display
+genfscon proc  /driver/glove             u:object_r:vendor_proc_graphics:s0

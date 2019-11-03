@@ -436,6 +436,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.lahaina
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
