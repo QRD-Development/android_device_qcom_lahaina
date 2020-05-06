@@ -199,6 +199,9 @@ vendor.usb.use_gadget_hal=0
 # Verity
 ro.apk_verity.mode=2
 
+# WiFi
+wifi.aware.interface=wifi-aware0
+
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
