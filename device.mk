@@ -26,6 +26,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Atrace
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0-service
+
 # Audio
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8350/audio
 
