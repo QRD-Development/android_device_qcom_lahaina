@@ -110,6 +110,7 @@ TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/debugfs.config
 TARGET_KERNEL_NO_GCC := true
 
 # Kernel modules
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
 BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     adsp_loader_dlkm.ko \
     apr_dlkm.ko \
