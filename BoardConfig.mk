@@ -85,6 +85,10 @@ DEVICE_MANIFEST_FILE += \
 
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/hidl/compatibility_matrix.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lahaina
+TARGET_RECOVERY_DEVICE_MODULES := libinit_lahaina
+
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
