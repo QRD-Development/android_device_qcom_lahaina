@@ -197,6 +197,10 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.qti
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
