@@ -8,5 +8,8 @@ ro.af.client_heap_size_kbyte=7168
 # Camera
 ro.camerax.extensions.enabled=true
 
+# LMK
+ro.lmk.filecache_min_kb=153600
+
 # Thermal
 persist.vendor.thermal.config=/vendor/etc/thermal-engine.conf
