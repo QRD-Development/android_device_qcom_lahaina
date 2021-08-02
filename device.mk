@@ -23,6 +23,11 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Boot Control
+PRODUCT_PACKAGES += \
+    bootctrl.lahaina \
+    bootctrl.lahaina.recovery
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
