@@ -44,6 +44,10 @@ PRODUCT_PACKAGES += \
     ueventd-odm.rc \
     ueventd.qcom.rc
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.qti
+
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
