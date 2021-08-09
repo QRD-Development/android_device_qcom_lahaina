@@ -34,3 +34,6 @@ persist.vendor.sensors.enable.mag_filter=true
 
 # Vendor
 ro.vendor.qti.va_aosp.support=1
+
+# WFD
+persist.debug.wfd.enable=1
