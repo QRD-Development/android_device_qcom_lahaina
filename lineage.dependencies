@@ -1,2 +1,6 @@
 [
+  {
+    "repository": "android_kernel_qcom_sm8350",
+    "target_path": "kernel/qcom/sm8350"
+  }
 ]
