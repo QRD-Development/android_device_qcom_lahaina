@@ -83,5 +83,8 @@ PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
+# Storage
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/qcom/lahaina/lahaina-vendor.mk)
