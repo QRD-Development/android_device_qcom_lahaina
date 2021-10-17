@@ -37,7 +37,9 @@
         android:directBootAware="true"
         android:theme="@style/Theme.SubSettingsBase">
 
-        <receiver android:name=".BootCompletedReceiver">
+        <receiver
+            android:name=".BootCompletedReceiver"
+            android:exported="true">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -52,7 +54,7 @@
         <activity
             android:name=".refreshrate.RefreshActivity"
             android:label="@string/refresh_title"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
