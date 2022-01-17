@@ -10,6 +10,7 @@ ro.camerax.extensions.enabled=true
 
 # LMK
 ro.lmk.filecache_min_kb=153600
+ro.lmk.kill_timeout_ms=50
 
 # Thermal
 persist.vendor.thermal.config=/vendor/etc/thermal-engine.conf
