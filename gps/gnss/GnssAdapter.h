@@ -186,9 +186,7 @@ public:
     typedef void (*LogGnssLatency)(const GnssLatencyInfo& gnssLatencyMeasInfo);
 
     GnssReportLoggerUtil() : mLogLatency(nullptr) {
-        const char* libname = "liblocdiagiface.so";
-        void* libHandle = nullptr;
-        mLogLatency = (LogGnssLatency)dlGetSymFromLib(libHandle, libname, "LogGnssLatency");
+        mLogLatency = nullptr;
     }
 
     bool isLogEnabled();
