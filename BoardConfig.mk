@@ -255,6 +255,10 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
+# Use sha256 hash algorithm for odm vendor partition
+BOARD_AVB_ODM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+BOARD_AVB_VENDOR_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
