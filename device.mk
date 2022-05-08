@@ -244,11 +244,10 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor
 
 # Init
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
-
 PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.default \
+    fstab.default.vendor_ramdisk \
     init.class_main.sh \
     init.cust.rc \
     init.qcom.early_boot.sh \
