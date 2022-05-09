@@ -115,11 +115,10 @@ PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor
 
 # Init
-PRODUCT_COPY_FILES += $(DEVICE_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
-
 PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.qcom \
+    fstab.qcom.vendor_ramdisk \
     init.target.rc \
     ueventd-odm.rc
 
