@@ -108,7 +108,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 BOARD_FRP_PARTITION_NAME := frp
 
-
 # lights hal
 PRODUCT_PACKAGES += lights.qcom
 
@@ -150,7 +149,6 @@ PRODUCT_PACKAGES += libqrtr
 # diag-router
 TARGET_HAS_DIAG_ROUTER := true
 
-
 # f2fs utilities
 PRODUCT_PACKAGES += \
     sg_write_buffer \
@@ -174,13 +172,7 @@ PRODUCT_PACKAGES += android.hardware.camera.provider@2.4-impl
 # Enable binderized camera HAL
 PRODUCT_PACKAGES += android.hardware.camera.provider@2.4-service_64
 
-# QCV allows multiple chipsets to be supported on a single vendor.
-# Add vintf device manifests for chipsets in Lahaina QCV family below.
-TARGET_USES_QCV := true
-DEVICE_MANIFEST_SKUS := lahaina shima yupik
-DEVICE_MANIFEST_LAHAINA_FILES := device/qcom/lahaina/manifest_lahaina.xml
-DEVICE_MANIFEST_SHIMA_FILES := device/qcom/lahaina/manifest_shima.xml
-DEVICE_MANIFEST_YUPIK_FILES := device/qcom/lahaina/manifest_yupik.xml
+DEVICE_MANIFEST_FILE := device/qcom/lahaina/manifest_lahaina.xml
 
 DEVICE_MATRIX_FILE   := device/qcom/common/compatibility_matrix.xml
 
@@ -188,13 +180,11 @@ DEVICE_MATRIX_FILE   := device/qcom/common/compatibility_matrix.xml
 KERNEL_MODULES_INSTALL := dlkm
 KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_NAME)/$(KERNEL_MODULES_INSTALL)/lib/modules
 
-
 USE_LIB_PROCESS_GROUP := true
 
 # MIDI feature
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
-
 
 #Enable full treble flag
 PRODUCT_FULL_TREBLE_OVERRIDE := true
