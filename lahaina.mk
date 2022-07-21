@@ -47,8 +47,6 @@ PRODUCT_DEVICE := lahaina
 PRODUCT_BRAND := qti
 PRODUCT_MODEL := Lahaina for arm64
 
-TARGET_USES_QCOM_BSP := false
-
 # RRO configuration
 TARGET_USES_RRO := true
 
