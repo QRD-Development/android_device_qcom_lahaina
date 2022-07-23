@@ -80,6 +80,11 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.lahaina.rc
 
+# Keymaster
+PRODUCT_PACKAGES += \
+   android.hardware.keymaster@4.1 \
+   android.hardware.keymaster@4.1.vendor
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.qti \
