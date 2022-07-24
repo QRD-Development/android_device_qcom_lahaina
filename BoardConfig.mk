@@ -214,10 +214,6 @@ ifneq "$(KERNEL_DEFCONFIG)" "vendor/$(TARGET_BOARD_PLATFORM)-gki_defconfig"
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(KERNEL_MODULES_OUT)/msm_drm.ko
 endif
 
-# Use sha256 for dm-verity partitions
-BOARD_AVB_VENDOR_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
-BOARD_AVB_ODM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
-
 BOARD_DO_NOT_STRIP_VENDOR_MODULES := true
 TARGET_USES_ION := true
 TARGET_USES_NEW_ION_API :=true
