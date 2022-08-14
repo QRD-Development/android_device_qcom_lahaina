@@ -149,9 +149,6 @@ BOARD_FRP_PARTITION_NAME := frp
 # Partitions - Vendor
 ENABLE_VENDOR_IMAGE := true
 
-# QSSI
-TARGET_USES_QSSI := true
-
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := all
 
