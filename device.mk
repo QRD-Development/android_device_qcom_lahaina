@@ -151,12 +151,6 @@ BOARD_FRP_PARTITION_NAME := frp
 # Partitions - Vendor
 ENABLE_VENDOR_IMAGE := true
 
-# QRTR
-PRODUCT_PACKAGES += \
-    qrtr-ns \
-    qrtr-lookup \
-    libqrtr
-
 # QSSI
 TARGET_USES_QSSI := true
 
