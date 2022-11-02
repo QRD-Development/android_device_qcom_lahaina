@@ -91,9 +91,6 @@ persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
 
-# Camera
-vendor.camera.aux.packagelist=org.lineageos.aperture,org.lineageos.aperture.dev
-
 # DPM
 persist.vendor.dpm.idletimer.mode=default
 persist.vendor.dpmhalservice.enable=1
