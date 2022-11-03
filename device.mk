@@ -180,6 +180,10 @@ PRODUCT_PACKAGES += \
 # Storage
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# System Helper
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.systemhelper@1.0.vendor
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
