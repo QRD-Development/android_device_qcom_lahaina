@@ -50,6 +50,8 @@ on init
     write /dev/stune/top-app/schedtune.prefer_high_cap 1
     write /dev/stune/top-app/schedtune.boost 100
 
+    copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
+
 on boot
     chown system system /dev/cpuset/cgroup.procs
     chown system system /dev/cpuset/foreground/cgroup.procs
@@ -102,12 +104,29 @@ on property:vendor.post_boot.parsed=1
 
     # Configure uclamp
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/background/cpu.uclamp.max 50
+    write /dev/cpuctl/system-background/cpu.uclamp.max 50
+    write /dev/cpuctl/dex2oat/cpu.uclamp.max 60
+    # Setup cpu.shares to throttle background groups (bg ~ 5% sysbg ~ 5% dex2oat ~2.5%)
+    write /dev/cpuctl/background/cpu.shares 1024
+    write /dev/cpuctl/system-background/cpu.shares 1024
+    write /dev/cpuctl/dex2oat/cpu.shares 512
+    write /dev/cpuctl/system/cpu.shares 20480
+    # We only have system and background groups holding tasks and the groups below are empty
+    write /dev/cpuctl/camera-daemon/cpu.shares 20480
+    write /dev/cpuctl/foreground/cpu.shares 20480
+    write /dev/cpuctl/nnapi-hal/cpu.shares 20480
+    write /dev/cpuctl/rt/cpu.shares 20480
+    write /dev/cpuctl/top-app/cpu.shares 20480
 
     # CPUSets
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
     setprop dalvik.vm.dex2oat-threads 6
 
 on property:sys.boot_completed=1
+    # Migrate tasks again in case kernel threads are created during boot
+    copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
+
     swapon_all /vendor/etc/fstab.zram
 
 service lahaina-post-boot /vendor/bin/init.lahaina.post_boot.sh
