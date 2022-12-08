@@ -144,6 +144,13 @@ on property:vendor.display.lcd_density=560
 on property:vendor.display.lcd_density=640
    setprop dalvik.vm.heapgrowthlimit 512m
 
+on property:vendor.post_boot.parsed=1
+   # IRQ Tuning
+   # IRQ 243: msm_drm0
+   # IRQ 222: kgsl_3d0_irq
+   write /proc/irq/243/smp_affinity_list 2
+   write /proc/irq/240/smp_affinity_list 1
+
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 

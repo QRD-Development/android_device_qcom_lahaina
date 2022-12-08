@@ -151,6 +151,10 @@ BOARD_FRP_PARTITION_NAME := frp
 # Partitions - Vendor
 ENABLE_VENDOR_IMAGE := true
 
+# Performance
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+
 # Properties
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
