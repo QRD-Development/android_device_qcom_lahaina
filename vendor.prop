@@ -169,6 +169,9 @@ debug.stagefright.omx_default_rank=0
 # Multi-Gen LRU
 persist.device_config.mglru_native.lru_gen_config=core
 
+# OEM Unlock
+ro.oem_unlock_supported=1
+
 # PASR
 vendor.power.pasr.enabled=true
 vendor.pasr.activemode.enabled=true
