@@ -171,6 +171,9 @@ persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 ro.telephony.default_network=33,33
 
+# OEM Unlock
+ro.oem_unlock_supported=1
+
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.on_change_sample_period=true
