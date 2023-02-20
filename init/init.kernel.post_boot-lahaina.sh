@@ -198,7 +198,7 @@ if [ $rev == "1.0" ]; then
 else
 	echo "0:1305600" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
 fi
-echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+echo 200 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
 
 # configure governor settings for gold cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
