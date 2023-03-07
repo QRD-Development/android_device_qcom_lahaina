@@ -28,6 +28,7 @@ on property:vendor.post_boot.parsed=1
     write /dev/cpuset/restricted/cpus 0-3
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/foreground/cpus 0-6
+    write /dev/cpuset/audio-app/cpus 1-2
 
     # Runtime fs tuning
     write /sys/block/sda/queue/read_ahead_kb 128
