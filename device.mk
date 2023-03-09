@@ -1,3 +1,7 @@
+# Directories of dependent local repositories
+DEVICE_PATH := device/qcom/lahaina
+QCOM_COMMON_PATH := device/qcom/common
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
@@ -106,12 +110,12 @@ PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
 
 # Manifests
-DEVICE_MANIFEST_FILE := device/qcom/lahaina/configs/vintf/manifest_lahaina.xml
-DEVICE_MATRIX_FILE := device/qcom/common/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE :=  $(DEVICE_PATH)/configs/vintf/manifest_lahaina.xml
+DEVICE_MATRIX_FILE := $(QCOM_COMMON_PATH)/compatibility_matrix.xml
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(DEVICE_PATH)
 
 # Neural networks
 PRODUCT_PACKAGES += \
