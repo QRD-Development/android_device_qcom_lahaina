@@ -106,7 +106,7 @@ PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
 
 # Manifests
-DEVICE_MANIFEST_FILE := device/qcom/lahaina/manifest_lahaina.xml
+DEVICE_MANIFEST_FILE := device/qcom/lahaina/configs/vintf/manifest_lahaina.xml
 DEVICE_MATRIX_FILE := device/qcom/common/compatibility_matrix.xml
 
 # Namespaces
