@@ -33,4 +33,7 @@
          in an overlay, an empty string is passed in. -->
     <string name="config_wlan_network_service_package">vendor.qti.iwlan</string>
 
+    <!-- Auto-brightness sensor type string -->
+    <string name="config_displayLightSensorType">"android.sensor.light"</string>
+
 </resources>
