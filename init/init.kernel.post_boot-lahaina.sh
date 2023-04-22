@@ -166,6 +166,18 @@ else
 fi
 echo 1 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
 
+# Tune DAMON Based Reclaim
+echo Y > /sys/module/damon_reclaim/parameters/enabled
+echo 30000000 > /sys/module/damon_reclaim/parameters/min_age
+echo 0 > /sys/module/damon_reclaim/parameters/quota_ms
+echo 536870912 > /sys/module/damon_reclaim/parameters/quota_sz
+echo 20000000 > /sys/module/damon_reclaim/parameters/wmarks_interval
+echo 700 > /sys/module/damon_reclaim/parameters/wmarks_high
+echo 500 > /sys/module/damon_reclaim/parameters/wmarks_mid
+echo 100 > /sys/module/damon_reclaim/parameters/wmarks_low
+echo 20000 > /sys/module/damon_reclaim/parameters/sample_interval
+echo Y > /sys/module/damon_reclaim/parameters/commit_inputs
+
 # configure bus-dcvs
 for device in /sys/devices/platform/soc
 do
