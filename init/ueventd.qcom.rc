@@ -427,6 +427,9 @@ firmware_directories /vendor/firmware_mnt/image/
 
 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp power/control 0664 system graphics
 
+# socinfo
+/sys/devices/soc0           serial_number            0000    root    root
+
 #asm330 sensor
 #common sensors files
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   buffer/enable                   0664    system  system
