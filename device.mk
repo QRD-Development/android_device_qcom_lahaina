@@ -249,7 +249,7 @@ PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk \
     init.class_main.sh \
-    init.cust.rc \
+    init.lahaina.perf.rc \
     init.qcom.early_boot.sh \
     init.qcom.rc \
     init.qcom.sh \

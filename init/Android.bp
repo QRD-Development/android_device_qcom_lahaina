@@ -18,8 +18,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.cust.rc",
-    src: "init.cust.rc",
+    name: "init.lahaina.perf.rc",
+    src: "init.lahaina.perf.rc",
     sub_dir: "init",
     vendor: true,
 }
