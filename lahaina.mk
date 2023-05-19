@@ -120,6 +120,7 @@ PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.qcom \
     fstab.qcom.vendor_ramdisk \
+    init.cust.rc \
     init.target.rc \
     ueventd-odm.rc
 
