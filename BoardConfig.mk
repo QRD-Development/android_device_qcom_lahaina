@@ -14,6 +14,10 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
 
+# Assert
+TARGET_BOARD_INFO_FILE := device/qcom/lahaina/board-info.txt
+TARGET_OTA_ASSERT_DEVICE := lahaina
+
 # AVB - Disable Verification
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
@@ -70,9 +74,6 @@ BOARD_RAMDISK_USE_LZ4 := true
 KERNEL_CUSTOM_LLVM := true
 KERNEL_FULL_LLVM := true
 KERNEL_DEFCONFIG := lahaina-qgki_defconfig
-
-# OTA Assert
-TARGET_OTA_ASSERT_DEVICE := lahaina
 
 # Partitions - A/B
 AB_OTA_PARTITIONS := boot dtbo odm product system system_ext vendor vendor_boot vbmeta vbmeta_system
