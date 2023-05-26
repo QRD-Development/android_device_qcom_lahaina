@@ -20,6 +20,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a76
 TARGET_NO_BOOTLOADER := false
 TARGET_USES_UEFI := true
 
+# Assert
+TARGET_BOARD_INFO_FILE := device/qcom/lahaina/board-info.txt
+
 # AVB
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
