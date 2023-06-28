@@ -180,6 +180,10 @@ PRODUCT_PACKAGES += \
 # Storage
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.qti
+
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
