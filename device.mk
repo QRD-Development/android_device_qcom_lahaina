@@ -70,10 +70,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.lahaina.rc
 
-# Kernel Modules
-KERNEL_MODULES_INSTALL := dlkm
-KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_NAME)/$(KERNEL_MODULES_INSTALL)/lib/modules
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.qti \
