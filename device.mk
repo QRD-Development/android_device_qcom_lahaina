@@ -169,3 +169,6 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
+
+# Proprietary Vendor
+$(call inherit-product, vendor/qcom/lahaina/lahaina-vendor.mk)
