@@ -22,6 +22,7 @@ TARGET_USES_UEFI := true
 
 # Assert
 TARGET_BOARD_INFO_FILE := device/qcom/lahaina/board-info.txt
+TARGET_OTA_ASSERT_DEVICE := lahaina
 
 # AVB
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
