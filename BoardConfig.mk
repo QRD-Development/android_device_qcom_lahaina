@@ -63,6 +63,9 @@ BOARD_KERNEL_CMDLINE += swiotlb=0
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_USE_LZ4 := true
 
+# OTA Assert
+TARGET_OTA_ASSERT_DEVICE := lahaina
+
 # Partitions - A/B
 AB_OTA_PARTITIONS := boot dtbo odm product system system_ext vendor vendor_boot vbmeta vbmeta_system
 AB_OTA_UPDATER := true
