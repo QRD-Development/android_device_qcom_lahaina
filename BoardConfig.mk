@@ -111,6 +111,9 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.default
 
+# Screen density
+TARGET_SCREEN_DENSITY := 480
+
 # UFS
 #namespace definition for librecovery_updater
 #differentiate legacy 'sg' or 'bsg' framework
