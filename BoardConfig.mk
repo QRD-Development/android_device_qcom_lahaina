@@ -1,3 +1,6 @@
+# Inherit Mainline Common BoardConfig
+include build/make/target/board/BoardConfigMainlineCommon.mk
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
@@ -76,7 +79,6 @@ BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product system system_ext odm vendor
 
 # Partitions - Filesystems
-BOARD_EXT4_SHARE_DUP_BLOCKS := true
 BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -84,14 +86,8 @@ BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_F2FS := true
 
-# Partitions - Metadata
-BOARD_USES_METADATA_PARTITION := true
-
 # Partitions - Paths
 TARGET_COPY_OUT_ODM := odm
-TARGET_COPY_OUT_PRODUCT := product
-TARGET_COPY_OUT_SYSTEM_EXT := system_ext
-TARGET_COPY_OUT_VENDOR := vendor
 
 # Partitions - Sizes
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x06000000
@@ -108,7 +104,6 @@ ADD_RADIO_FILES := false
 
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
-TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.default
 
 # Screen density
