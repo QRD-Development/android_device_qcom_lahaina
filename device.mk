@@ -117,7 +117,6 @@ PRODUCT_PACKAGES += \
 
 # Manifests
 DEVICE_MANIFEST_FILE :=  $(DEVICE_PATH)/configs/vintf/manifest_lahaina.xml
-DEVICE_MATRIX_FILE := $(QCOM_COMMON_PATH)/compatibility_matrix.xml
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
