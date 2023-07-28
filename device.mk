@@ -130,7 +130,7 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
-$(call inherit-product, build/make/target/product/gsi_keys.mk)
+$(call inherit-product, build/make/target/product/developer_gsi_keys.mk)
 
 # Partitions - FRP
 BOARD_FRP_PARTITION_NAME := frp
