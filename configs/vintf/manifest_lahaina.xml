@@ -500,6 +500,16 @@
             <instance>uimRemoteServer1</instance>
         </interface>
     </hal>
+    <!-- Sensors -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.sensorscalibrate</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISensorsCalibrate</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- QSEECOM -->
     <hal format="hidl">
         <name>vendor.qti.hardware.qseecom</name>
