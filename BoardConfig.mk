@@ -66,6 +66,7 @@ BOARD_KERNEL_CMDLINE += swiotlb=0
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_USE_LZ4 := true
+KERNEL_CUSTOM_LLVM := true
 KERNEL_DEFCONFIG := lahaina-qgki_defconfig
 
 # OTA Assert
