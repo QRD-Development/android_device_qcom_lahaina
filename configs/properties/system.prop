@@ -5,4 +5,4 @@ ro.charger.enable_suspend=1
 persist.sys.brightness.low.gamma=true
 
 # Multi-Gen LRU
-persist.device_config.mglru_native.lru_gen_config=all
+persist.device_config.mglru_native.lru_gen_config=core
