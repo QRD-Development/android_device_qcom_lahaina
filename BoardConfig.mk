@@ -48,7 +48,7 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 LOC_HIDL_VERSION = 4.0
 
 # Kernel
-BOARD_KERNEL_BASE        := 0x00000000
+BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.memcg=1
