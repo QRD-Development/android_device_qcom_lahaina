@@ -1,3 +1,5 @@
+# Unpinned blobs from lahaina-userdebug 11 RKQ1.211103.002 lnxbuild11180739 test-keys
+
 # ADSPRPC
 vendor/bin/adsprpcd
 vendor/bin/cdsprpcd
