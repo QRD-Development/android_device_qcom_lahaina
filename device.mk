@@ -196,5 +196,9 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service.lahaina
+
 # Proprietary Vendor
 $(call inherit-product, vendor/qcom/lahaina/lahaina-vendor.mk)
