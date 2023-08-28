@@ -3,10 +3,6 @@ ro.vendor.audio.sdk.fluencetype=none
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.fluence.voicerec=false
-persist.vendor.audio.speaker.prot.enable=false
-persist.vendor.audio.spv4.enable=false
-persist.vendor.audio.vbat.enabled=false
-vendor.audio.hal.output.suspend.supported=false
 
 # Bluetooth
 persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
