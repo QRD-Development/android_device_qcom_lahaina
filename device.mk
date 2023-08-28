@@ -151,6 +151,11 @@ BOARD_FRP_PARTITION_NAME := frp
 # Partitions - Vendor
 ENABLE_VENDOR_IMAGE := true
 
+# Properties
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \

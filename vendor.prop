@@ -1,3 +1,24 @@
+# Audio
+ro.vendor.audio.sdk.fluencetype=none
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio.speaker.prot.enable=false
+persist.vendor.audio.spv4.enable=false
+persist.vendor.audio.vbat.enabled=false
+vendor.audio.hal.output.suspend.supported=false
+
+# Bluetooth
+persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
+persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+vendor.hw.fm.init=0
+
 # Enable incremental fs
 ro.incremental.enable=yes
 
@@ -5,9 +26,24 @@ ro.incremental.enable=yes
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 
+# Display
+ro.surface_flinger.refresh_rate_switching=true
+
+# DPM
+persist.vendor.dpm.idletimer.mode=default
+persist.vendor.dpmhalservice.enable=1
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
 # qteeconnector settings
 persist.vendor.qteeconnector.retrying_interval=30
 persist.vendor.qteeconnector.retrying_timeout=2000
+
+# Sensors
+persist.vendor.sensors.allow_non_default_discovery=true
+persist.vendor.sensors.on_change_sample_period=true
+persist.vendor.sensors.sync_request=true
 
 # SOC manufacturer
 ro.soc.manufacturer=QTI
