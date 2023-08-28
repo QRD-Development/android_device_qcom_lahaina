@@ -1,4 +1,4 @@
-# Unpinned blobs from lahaina-userdebug 11 RKQ1.211103.002 lnxbuild11180739 test-keys
+# Unpinned blobs from lahaina-userdebug 11 RKQ1.220401.001 lnxbuild04190758 test-keys
 
 # ACDB
 vendor/etc/acdbdata/CDP/CDP_Bluetooth_cal.acdb
@@ -779,14 +779,12 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
-# Data - from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
-vendor/bin/netmgrd|4254e808131fa3a13aec1474bb769dbd539379ff
-
 # Data
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
 vendor/bin/embmsslServer
 vendor/bin/ipacm-diag
+vendor/bin/netmgrd
 vendor/bin/port-bridge
 vendor/bin/qti
 vendor/bin/shsusrd
@@ -1148,9 +1146,9 @@ vendor/lib64/libQTEEConnector_listener.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
-# RemoteFS - from RUI
-vendor/bin/rmt_storage|bd7eb2864e49d7aa0b8fbd7e0839707e3f2ddf60
-vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
+# RemoteFS
+vendor/bin/rmt_storage
+vendor/etc/init/vendor.qti.rmt_storage.rc
 
 # SCVE
 vendor/lib64/libscveCommon.so
