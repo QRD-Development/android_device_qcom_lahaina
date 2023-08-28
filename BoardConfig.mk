@@ -113,6 +113,10 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.default
 # Screen density
 TARGET_SCREEN_DENSITY := 480
 
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/vendor
+
 # UFS
 #namespace definition for librecovery_updater
 #differentiate legacy 'sg' or 'bsg' framework
