@@ -43,7 +43,19 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    libtinyalsa
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.common@2.0.vendor \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.service \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth.audio@2.1-impl \
+    libtinyalsa \
+    libtinycompress \
+    libtinyxml \
+    libaudiofoundation \
+    libaudiofoundation.vendor \
+    tinyplay \
+    tinymix
 
 # Camera
 PRODUCT_COPY_FILES += \
