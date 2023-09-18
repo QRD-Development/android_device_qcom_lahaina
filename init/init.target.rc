@@ -157,7 +157,6 @@ on init && property:ro.boot.mode=charger
     wait /sys/class/power_supply/battery
 
 on charger
-    start vendor.power_off_alarm
     setprop sys.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
 
