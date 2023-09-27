@@ -196,6 +196,8 @@ PRODUCT_PACKAGES += \
     libsdmutils \
     libtinyxml \
     lights.qcom \
+    init.qti.display_boot.rc \
+    init.qti.display_boot.sh \
     memtrack.default \
     vendor.display.config@1.0 \
     vendor.display.config@1.15.vendor \
