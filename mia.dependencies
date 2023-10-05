@@ -1,0 +1,63 @@
+[
+    {
+        "remote":       "github",
+        "repository":   "Edward-Projects/android_device_qcom_lahaina",
+        "target_path":  "device/qcom/lahaina",
+        "revision":     "tsukasa"
+    },
+    {
+        "remote":       "github",
+        "repository":   "Edward-Projects/android_kernel_qcom_sm8350",
+        "target_path":  "kernel/msm-5.4",
+        "revision":     "tsukasa"
+    },
+    {
+        "remote":       "github",
+        "repository":   "Project-Mia/android_hardware_qcom_audio",
+        "target_path":  "vendor/qcom/opensource/audio-hal/primary-hal",
+        "revision":     "tsukasa-888"
+    },
+    {
+        "remote":       "github",
+        "repository":   "Project-Mia/android_hardware_qcom_display",
+        "target_path":  "hardware/qcom/display",
+        "revision":     "tsukasa-888"
+    },
+    {
+        "remote":       "github",
+        "repository":   "Project-Mia/android_hardware_qcom_gps",
+        "target_path":  "hardware/qcom/gps",
+        "revision":     "tsukasa-legacy-component"
+    },
+    {
+        "remote":       "github",
+        "repository":   "Project-Mia/android_hardware_qcom_media",
+        "target_path":  "hardware/qcom/media",
+        "revision":     "tsukasa-888"
+    },
+    {
+        "remote":       "github",
+        "repository":   "Project-Mia/android_vendor_nxp_opensource_halimpl",
+        "target_path":  "vendor/nxp/opensource/halimpl",
+        "revision":     "tsukasa-SN100X-legacy"
+    },
+    {
+        "remote":       "github",
+        "repository":   "Project-Mia/android_vendor_nxp_opensource_hidlimpl",
+        "target_path":  "vendor/nxp/opensource/hidlimpl",
+        "revision":     "tsukasa-SN100X-legacy"
+    },
+    {
+        "remote":       "gitlab",
+        "repository":   "ThankYouMario/android_prebuilts_clang-standalone",
+        "target_path":  "prebuilts/clang-standalone",
+        "revision":     "13",
+        "clone-depth":  "1"
+    },
+    {
+        "remote":       "github",
+        "repository":   "Edward-Projects/proprietary_vendor_qcom_lahaina",
+        "target_path":  "vendor/qcom/lahaina",
+        "revision":     "tsukasa"
+    }
+]
