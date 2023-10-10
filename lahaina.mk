@@ -138,6 +138,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BUILD_ODM_IMAGE := true
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
+
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := \
     all \
