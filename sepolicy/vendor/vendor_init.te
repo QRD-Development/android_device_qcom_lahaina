@@ -1,0 +1,2 @@
+# schedtune
+allow vendor_init device:file { create read write };
