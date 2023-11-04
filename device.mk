@@ -183,7 +183,8 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
     android.hardware.boot-service.qti.recovery \
-    libboot_control_qti
+    libboot_control_qti \
+    libgptutils.lahaina
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
