@@ -5,6 +5,12 @@
 //
 
 prebuilt_etc {
+    name: "charger_fw_fstab.qti",
+    src: "charger_fw_fstab.qti",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "fstab.default",
     src: "fstab.default",
     vendor: true,

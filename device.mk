@@ -34,6 +34,7 @@ PRODUCT_COPY_FILES += $(LOCAL_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_
 
 PRODUCT_PACKAGES += \
     fstab.default \
+    charger_fw_fstab.qti \
     init.target.rc \
     ueventd-odm.rc
 
