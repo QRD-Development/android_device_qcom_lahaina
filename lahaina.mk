@@ -63,7 +63,8 @@ PRODUCT_COPY_FILES += $(DEVICE_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RA
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.target.rc
+    init.target.rc \
+    ueventd-odm.rc
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
