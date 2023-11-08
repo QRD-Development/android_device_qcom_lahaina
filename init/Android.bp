@@ -1,0 +1,11 @@
+//
+// Copyright (C) 2023 Project Mia
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "fstab.qcom",
+    vendor: true,
+}
