@@ -134,3 +134,8 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 SOONG_CONFIG_NAMESPACES += ufsbsg
 SOONG_CONFIG_ufsbsg += ufsframework
 SOONG_CONFIG_ufsbsg_ufsframework := bsg
+
+# VINTF
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/configs/vintf/manifest_ab.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest_lahaina.xml 
