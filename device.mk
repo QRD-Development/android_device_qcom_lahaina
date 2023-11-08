@@ -34,7 +34,8 @@ PRODUCT_COPY_FILES += $(LOCAL_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_
 
 PRODUCT_PACKAGES += \
     fstab.default \
-    init.target.rc
+    init.target.rc \
+    ueventd-odm.rc
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
