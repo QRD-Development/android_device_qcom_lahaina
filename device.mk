@@ -33,7 +33,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
 
 PRODUCT_PACKAGES += \
-    fstab.default
+    fstab.default \
+    init.target.rc
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
