@@ -62,6 +62,7 @@ TARGET_HAS_GENERIC_KERNEL_HEADERS := true
 PRODUCT_COPY_FILES += $(DEVICE_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
 PRODUCT_PACKAGES += \
+    charger_fw_fstab.qti \
     fstab.qcom \
     init.target.rc \
     ueventd-odm.rc
