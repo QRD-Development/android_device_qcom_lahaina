@@ -50,6 +50,7 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon \
     FrameworksResTarget \
     LahainaFrameworks \
+    LahainaSystemUI \
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon \
