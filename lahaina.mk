@@ -131,7 +131,8 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     LahainaFrameworks \
     LahainaSettings \
-    LahainaSystemUI
+    LahainaSystemUI \
+    MiaLahainaFrameworks
 
 # Partitions
 PRODUCT_BUILD_ODM_IMAGE := true
