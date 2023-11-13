@@ -147,3 +147,7 @@ PRODUCT_PACKAGES += \
 
 # Vendor
 $(call inherit-product, vendor/qcom/lahaina/lahaina-vendor.mk)
+
+# WLAN
+PRODUCT_COPY_FILES += \
+    device/qcom/wlan/lahaina/WCNSS_qcom_cfg_wlan.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
