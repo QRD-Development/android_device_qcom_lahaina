@@ -108,5 +108,9 @@ BOARD_SYSTEMSDK_VERSIONS := 30
 PRODUCT_CHARACTERISTICS := nosdcard
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# System Helper
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.systemhelper@1.0.vendor
+
 # Vendor
 $(call inherit-product, vendor/qcom/lahaina/lahaina-vendor.mk)
