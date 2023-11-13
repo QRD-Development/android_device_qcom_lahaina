@@ -71,6 +71,11 @@ BOARD_HAVE_QCOM_FM := false
 # Generic Kernel Headers
 TARGET_HAS_GENERIC_KERNEL_HEADERS := true
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl-qti \
+    android.hardware.health@2.1-service
+
 # Init
 PRODUCT_COPY_FILES += $(DEVICE_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
