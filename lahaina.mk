@@ -130,6 +130,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # Overlay
 PRODUCT_PACKAGES += \
     LahainaFrameworks \
+    LahainaSettings \
     LahainaSystemUI
 
 # Partitions
