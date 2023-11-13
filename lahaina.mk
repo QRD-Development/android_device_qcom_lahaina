@@ -129,7 +129,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    LahainaFrameworks
+    LahainaFrameworks \
+    LahainaSystemUI
 
 # Partitions
 PRODUCT_BUILD_ODM_IMAGE := true
