@@ -21,4 +21,7 @@ PRODUCT_MANUFACTURER := QUALCOMM
 PRODUCT_BRAND := qti
 PRODUCT_NAME := mia_lahaina
 PRODUCT_DEVICE := lahaina
-PRODUCT_MODEL := Mia AOSP on lahaina
+PRODUCT_MODEL := lahaina for arm64
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="lahaina for arm64"
