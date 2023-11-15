@@ -126,6 +126,19 @@ BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 6438256640
 BOARD_SUPER_PARTITION_SIZE := 6442450944
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 0x06000000
 
+# Properties
+TARGET_ODM_PROP += \
+    $(DEVICE_PATH)/configs/properties/odm.prop
+
+TARGET_PRODUCT_PROP += \
+    $(DEVICE_PATH)/configs/properties/product.prop
+
+TARGET_SYSTEM_PROP += \
+    $(DEVICE_PATH)/configs/properties/system.prop
+
+TARGET_VENDOR_PROP += \
+    $(DEVICE_PATH)/configs/properties/vendor.prop
+
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_USES_RECOVERY_AS_BOOT := true
