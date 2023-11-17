@@ -123,6 +123,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd-odm.rc
 
+# Lights
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.lights.service
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
