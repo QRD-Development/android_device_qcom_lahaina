@@ -1,0 +1,2 @@
+allow servicemanager vendor_hal_poweroptservice_qti:binder call;
+allow servicemanager vendor_location_slim_daemon:binder call;
