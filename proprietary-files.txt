@@ -1815,10 +1815,8 @@ vendor/firmware/vpu20_4v_unsigned.mbn
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine|6d85f8a99a6e1fd5a709c92c6c9c98c1708ad15e
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc|992f63e9700da29099e0590858a6becaaadb2976
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml|91d7c0996133556cb7f7c5d1b7e5d9e7f07b78b2
-vendor/lib/liboemcrypto.so|e96f1968a471e0496fcc0d5f0881b5d5eadccd9f
 vendor/lib/libtrustedapploader.so|4297af4deefbe154c41482c9cc9e680649ee7744
 vendor/lib/mediadrm/libwvdrmengine.so|2e79f1b5674605bafa7e9d024b341232bc601e3e
-vendor/lib64/liboemcrypto.so|e0a1ed1b1aa5ca6e068ea2b398f860cd6c27ef4d
 vendor/lib64/libtrustedapploader.so|afdfd3e8792ca6cad9d16574bc8f63bbbe09a609
 vendor/lib64/libwvhidl.so|9efc628238556c496d06e74e54e0357e18541b95
 vendor/lib64/mediadrm/libwvdrmengine.so|bdab0ade1fa0e9dc1c9381eb72c65d2424caed3c
