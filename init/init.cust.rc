@@ -1,5 +1,9 @@
 #
 # Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2023 Paranoid Android
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+
+on init
+    write /dev/blkio/background/blkio.ssg.max_available_ratio 25
