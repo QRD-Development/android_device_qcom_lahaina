@@ -18,6 +18,12 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "fstab.zram",
+    src: "fstab.zram",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.lahaina.perf.rc",
     src: "init.lahaina.perf.rc",
     sub_dir: "init",

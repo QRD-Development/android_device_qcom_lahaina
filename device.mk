@@ -237,6 +237,7 @@ PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.default \
     fstab.default.vendor_ramdisk \
+    fstab.zram \
     init.class_main.sh \
     init.kernel.post_boot-lahaina.sh \
     init.kernel.post_boot-shima.sh \
