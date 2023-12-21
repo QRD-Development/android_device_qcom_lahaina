@@ -120,6 +120,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.vendor_ramdisk \
     init.cust.rc \
+    init.recovery.cust.rc \
     init.target.rc \
     ueventd-odm.rc
 
