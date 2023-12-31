@@ -190,7 +190,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.systemhelper@1.0.vendor
 
 # Vendor
-$(call inherit-product, vendor/qcom/lahaina/lahaina-vendor.mk)
+$(call inherit-product, vendor/qcom/qrd/lahaina/lahaina-vendor.mk)
 
 # WiFi Display
 PRODUCT_PACKAGES += \
