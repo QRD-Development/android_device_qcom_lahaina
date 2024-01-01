@@ -9,7 +9,7 @@
 set -e
 
 DEVICE=lahaina
-VENDOR=qcom
+VENDOR=qcom/qrd
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
