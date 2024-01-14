@@ -47,6 +47,11 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 # FSConfig
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
+# HIDL
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/hidl/manifest_ab.xml \
+    $(DEVICE_PATH)/hidl/manifest_lahaina.xml
+
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
