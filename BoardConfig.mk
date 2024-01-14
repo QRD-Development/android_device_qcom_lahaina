@@ -56,6 +56,8 @@ DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/hidl/manifest_ab.xml \
     $(DEVICE_PATH)/hidl/manifest_lahaina.xml
 
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/hidl/compatibility_matrix.xml
+
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
