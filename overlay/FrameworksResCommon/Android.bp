@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "FrameworksResCommon",
+    product_specific: true,
+}

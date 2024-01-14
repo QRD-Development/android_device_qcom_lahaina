@@ -44,6 +44,15 @@ PRODUCT_PACKAGES += \
     ueventd-odm.rc \
     ueventd.qcom.rc
 
+# Overlays
+PRODUCT_PACKAGES += \
+    CarrierConfigResCommon \
+    FrameworksResCommon \
+    SystemUIResCommon \
+    TelephonyResCommon \
+    WifiResCommon \
+    WifiResCommonMainline
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
