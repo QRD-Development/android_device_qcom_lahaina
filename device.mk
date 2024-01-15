@@ -89,5 +89,12 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Vibrator
+PRODUCT_COPY_FILES += \
+    vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/qcom/lahaina/lahaina-vendor.mk)
