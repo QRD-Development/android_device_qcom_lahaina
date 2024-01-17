@@ -238,6 +238,9 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 120
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2023-05-01
+
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
