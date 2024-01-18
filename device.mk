@@ -186,6 +186,7 @@ PRODUCT_PACKAGES += \
     libsdmcore \
     libsdmutils \
     libtinyxml \
+    lights.qcom \
     memtrack.default \
     vendor.display.config@1.0 \
     vendor.display.config@1.15.vendor \
