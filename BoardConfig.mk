@@ -23,6 +23,9 @@ AB_OTA_PARTITIONS := \
     vbmeta \
     vbmeta_system
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
