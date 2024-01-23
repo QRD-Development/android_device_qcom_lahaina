@@ -6,5 +6,5 @@
 
 runtime_resource_overlay {
     name: "LahainaFrameworks",
-    vendor: true,
+    product_specific: true,
 }
