@@ -1,0 +1,2 @@
+# NFC
+vendor.nxp.nxpnfc::INxpNfc                                          u:object_r:hal_nfc_hwservice:s0

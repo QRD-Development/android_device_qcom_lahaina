@@ -1,2 +1,5 @@
 # Lights AIDL HAL
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.lights\.service                   u:object_r:hal_light_default_exec:s0
+
+# NFC AIDL HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc-service\.nxp                      u:object_r:hal_nfc_default_exec:s0
