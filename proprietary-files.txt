@@ -1068,6 +1068,7 @@ vendor/etc/libnfc-mtp-SN100.conf
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf
 vendor/etc/libnfc-qrd-SN100.conf
+vendor/etc/libnfc-qrd-SN100.conf:vendor/etc/libnfc-nxp.conf
 vendor/lib/libsn100u_fw.so
 
 # OMX
