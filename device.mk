@@ -268,10 +268,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.qti
-
 # Media
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
