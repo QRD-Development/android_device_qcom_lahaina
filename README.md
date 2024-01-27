@@ -1,6 +1,6 @@
 Copyright (C) 2024 The LineageOS Project
 
-Device configuration for Qualcomm Reference Device sm8350
+Device configuration for Qualcomm Reference Design sm8350
 =========================================
 
 The QRD8350 (codenamed _"lahaina"_) is a smartphone from Qualcomm.
