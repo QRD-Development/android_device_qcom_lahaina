@@ -309,10 +309,6 @@
     <!--  Define Google play service package for FRP-->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
-    <!-- Enable overlays for location components. -->
-    <string name="config_comboNetworkLocationProvider">com.qualcomm.location</string>
-    <string name="config_networkLocationProviderPackageName">com.qualcomm.location</string>
-
     <!--  Define optional package verifier name -->
     <string name="config_optionalPackageVerifierName" translatable="false">seemp.service</string>
 

@@ -358,6 +358,7 @@ PRODUCT_PACKAGES += \
     LahainaFrameworks \
     LahainaSettings \
     LahainaSystemUI \
+    QCOMGPSFrameworksOverlay \
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon \
