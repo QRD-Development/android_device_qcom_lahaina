@@ -641,6 +641,10 @@ vendor/etc/init/vendor.qti.diag.rc
 vendor/lib/vendor.qti.diaghal@1.0.so
 vendor/lib64/vendor.qti.diaghal@1.0.so
 
+# Display (Features)
+vendor/bin/feature_enabler_client
+vendor/etc/init/feature_enabler_client.rc
+
 # Display (HDR)
 vendor/lib64/libhdr_tm.so
 
