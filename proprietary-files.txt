@@ -617,6 +617,7 @@ vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
 
 # Data Firmware
+vendor/etc/init/ipa_fws.rc
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
 vendor/firmware/ipa_fws.b02
@@ -624,6 +625,13 @@ vendor/firmware/ipa_fws.b03
 vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
+vendor/firmware/yupik_ipa_fws.b00
+vendor/firmware/yupik_ipa_fws.b01
+vendor/firmware/yupik_ipa_fws.b02
+vendor/firmware/yupik_ipa_fws.b03
+vendor/firmware/yupik_ipa_fws.b04
+vendor/firmware/yupik_ipa_fws.elf
+vendor/firmware/yupik_ipa_fws.mdt
 
 # Diag
 system_ext/lib/vendor.qti.diaghal@1.0.so
@@ -775,13 +783,13 @@ vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GNSS
-system_ext/lib/liblocsdk_diag_jni.so
-system_ext/lib64/liblocsdk_diag_jni.so
 system_ext/etc/permissions/com.qti.location.sdk.xml
 system_ext/etc/permissions/com.qualcomm.location.xml
 system_ext/etc/permissions/com.qualcomm.qti.izattools.xml
 system_ext/etc/permissions/privapp-permissions-com.qualcomm.location.xml
 system_ext/framework/com.qti.location.sdk.jar
+system_ext/lib/liblocsdk_diag_jni.so
+system_ext/lib64/liblocsdk_diag_jni.so
 system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk
 system_ext/priv-app/xtra_t_app/xtra_t_app.apk
 vendor/app/CACertService/CACertService.apk
@@ -1009,14 +1017,30 @@ vendor/etc/media_codecs_lahaina_vendor.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_codecs_performance_lahaina.xml
 vendor/etc/media_codecs_performance_lahaina_vendor.xml
+vendor/etc/media_codecs_performance_shima_v1.xml
+vendor/etc/media_codecs_performance_shima_v2.xml
+vendor/etc/media_codecs_performance_shima_v3.xml
+vendor/etc/media_codecs_performance_yupik_iot.xml
+vendor/etc/media_codecs_performance_yupik_v0.xml
 vendor/etc/media_codecs_performance_yupik_v1.xml
+vendor/etc/media_codecs_shima_v1.xml
+vendor/etc/media_codecs_shima_v2.xml
+vendor/etc/media_codecs_shima_v3.xml
 vendor/etc/media_codecs_vendor_audio.xml
+vendor/etc/media_codecs_vendor_audio.xml
+vendor/etc/media_codecs_yupik_iot.xml
+vendor/etc/media_codecs_yupik_v0.xml
 vendor/etc/media_codecs_yupik_v1.xml
 vendor/etc/media_lahaina/video_system_specs.json
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles_lahaina.xml
 vendor/etc/media_profiles_lahaina_vendor.xml
+vendor/etc/media_profiles_shima_v1.xml
+vendor/etc/media_profiles_shima_v2.xml
+vendor/etc/media_profiles_shima_v3.xml
+vendor/etc/media_profiles_yupik_iot.xml
+vendor/etc/media_profiles_yupik_v0.xml
 vendor/etc/media_profiles_yupik_v1.xml
 vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
