@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2023 Project Mia
-# Copyright (C) 2023 Paranoid Android
+# Copyright (C) 2023-2024 Paranoid Android
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -191,10 +191,6 @@ PRODUCT_PACKAGES += \
 
 # Vendor
 $(call inherit-product, vendor/qcom/qrd/lahaina/lahaina-vendor.mk)
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libwfdaac_vendor
 
 # WLAN
 PRODUCT_COPY_FILES += \
