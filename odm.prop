@@ -1,5 +1,2 @@
-# Display
-persist.sys.sf.color_mode=0
-
 # QC Value Addons
 ro.vendor.qti.va_odm.support=1
