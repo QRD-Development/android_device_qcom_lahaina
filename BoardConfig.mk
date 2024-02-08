@@ -83,7 +83,7 @@ DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/hidl/keymaster-manifest.xml \
     $(DEVICE_PATH)/hidl/manifest_lahaina.xml
 
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/hidl/compatibility_matrix.xml
+DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lahaina
