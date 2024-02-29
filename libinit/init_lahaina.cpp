@@ -1,7 +1,7 @@
 /*
    Copyright (c) 2015, The Linux Foundation. All rights reserved.
    Copyright (C) 2016 The CyanogenMod Project.
-   Copyright (C) 2019-2020 The LineageOS Project.
+   Copyright (C) 2019-2024 The LineageOS Project.
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -74,6 +74,21 @@ void load_dalvik_properties() {
     property_override("dalvik.vm.heapminfree", "8m");
 }
 
+void load_fp_properties() {
+    // build fingerprint
+    property_override("ro.build.fingerprint", "qti/lahaina/lahaina:11/RKQ1.221111.001/lnxbuild12070507:userdebug/test-keys");
+    property_override("ro.bootimage.build.fingerprint", "qti/lahaina/lahaina:11/RKQ1.221111.001/lnxbuild12070507:userdebug/test-keys");
+    property_override("ro.odm.build.fingerprint", "qti/lahaina/lahaina:11/RKQ1.221111.001/lnxbuild12070507:userdebug/test-keys");
+    property_override("ro.product.build.fingerprint", "qti/lahaina/lahaina:11/RKQ1.221111.001/lnxbuild12070507:userdebug/test-keys");
+    property_override("ro.system.build.fingerprint", "qti/lahaina/lahaina:11/RKQ1.221111.001/lnxbuild12070507:userdebug/test-keys");
+    property_override("ro.system_ext.build.fingerprint", "qti/lahaina/lahaina:11/RKQ1.221111.001/lnxbuild12070507:userdebug/test-keys");
+    property_override("ro.vendor_dlkm.build.fingerprint", "qti/lahaina/lahaina:11/RKQ1.221111.001/lnxbuild12070507:userdebug/test-keys");
+    property_override("ro.vendor.build.fingerprint", "qti/lahaina/lahaina:11/RKQ1.221111.001/lnxbuild12070507:userdebug/test-keys");
+    // build desc
+    property_override("ro.build.description", "lahaina-userdebug 11 RKQ1.221111.001 lnxbuild12070507 test-keys");
+}
+
 void vendor_load_properties() {
+    load_fp_properties();
     load_dalvik_properties();
 }
