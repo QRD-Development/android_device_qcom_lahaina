@@ -30,12 +30,6 @@ prebuilt_etc {
     vendor: true,
 }
 
-sh_binary {
-    name: "init.lahaina.post_boot.sh",
-    src: "init.lahaina.post_boot.sh",
-    vendor: true,
-}
-
 prebuilt_etc {
     name: "init.qcom.rc",
     src: "init.qcom.rc",

@@ -243,7 +243,6 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-shima.sh \
     init.kernel.post_boot-yupik.sh \
     init.lahaina.perf.rc \
-    init.lahaina.post_boot.sh \
     init.qcom.early_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
