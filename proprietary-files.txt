@@ -1217,8 +1217,8 @@ system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so|ffccfde321f48e390c5af8d546e
 # QCC
 vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
 vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
 vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
@@ -1838,10 +1838,14 @@ vendor/lib64/mediadrm/libwvdrmengine.so|bdab0ade1fa0e9dc1c9381eb72c65d2424caed3c
 # WiFi
 vendor/bin/cnss-daemon
 vendor/etc/init/init.vendor.wlan.rc
+vendor/etc/wifi/aoa_cldb_falcon.bin
+vendor/etc/wifi/aoa_cldb_swl14.bin
+vendor/etc/wifi/icm.conf
 vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/qca6390/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini
+vendor/etc/wifi/vendor_cmd.xml
 vendor/etc/wifi/wlan/WCNSS_qcom_cfg.ini
-vendor/etc/wifi/wlan/WCNSS_qcom_cfg.ini:vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # WiFi Display (system) - from LE2121 14.0.0.210(EX01)
@@ -1929,9 +1933,3 @@ vendor/lib64/libwfdhdcpcp.so
 
 # WiFi Display (vendor) - from lemonadep - UP1A.230620.001
 vendor/etc/wfdconfig.xml|4f863ac9a71bafff8afc14e8fab26af979bbb1d6
-
-# WLAN
-vendor/etc/wifi/aoa_cldb_falcon.bin
-vendor/etc/wifi/aoa_cldb_swl14.bin
-vendor/etc/wifi/icm.conf
-vendor/etc/wifi/vendor_cmd.xml
