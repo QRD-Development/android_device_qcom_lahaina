@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from LA.UM.9.14.1.r1-12200-QCM6490.QSSI13.0
+## from LA.UM.9.14.1.r1-12200-QCM6490.QSSI13.0(vendor) and LA.QSSI.13.0.r1-10000.03-qssi.0(system)
 
 # ACDBs
 vendor/etc/acdbdata/CDP/CDP_Bluetooth_cal.acdb
