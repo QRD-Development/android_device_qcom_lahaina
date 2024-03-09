@@ -1841,12 +1841,6 @@ vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
 vendor/etc/wifi/icm.conf
-vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/qca6390/WCNSS_qcom_cfg.ini
-vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini
-vendor/etc/wifi/vendor_cmd.xml
-vendor/etc/wifi/wlan/WCNSS_qcom_cfg.ini
-vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # WiFi Display (system) - from LE2121 14.0.0.210(EX01)
 system/framework/WfdCommon.jar|a661c494d064b79a3f71579592411fada1ea232f
