@@ -99,4 +99,16 @@ on property:vendor.post_boot.parsed=1
     setprop dalvik.vm.dex2oat-threads 6
 
 on property:sys.boot_completed=1
+# Tune DAMON Based Reclaim
+    write /sys/module/damon_reclaim/parameters/enabled Y
+    write /sys/module/damon_reclaim/parameters/min_age 30000000
+    write /sys/module/damon_reclaim/parameters/quota_ms 0
+    write /sys/module/damon_reclaim/parameters/quota_sz 536870912
+    write /sys/module/damon_reclaim/parameters/wmarks_interval 20000000
+    write /sys/module/damon_reclaim/parameters/wmarks_high 700
+    write /sys/module/damon_reclaim/parameters/wmarks_mid 500
+    write /sys/module/damon_reclaim/parameters/wmarks_low 100
+    write /sys/module/damon_reclaim/parameters/sample_interval 20000
+    write /sys/module/damon_reclaim/parameters/commit_inputs Y
+
     swapon_all /vendor/etc/fstab.zram
