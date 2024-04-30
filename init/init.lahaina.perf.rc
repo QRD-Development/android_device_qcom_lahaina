@@ -52,6 +52,9 @@ on property:vendor.post_boot.parsed=1
     write /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us 2000
     write /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us 5000
 
+    # Gpu default power level, defaults to 1 with perfd removed As per kernel change, level  is now 315Mhz
+    write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 9
+
     # Runtime fs tuning
     write /sys/block/sda/queue/read_ahead_kb 128
     write /sys/block/sda/queue/nr_requests 128
