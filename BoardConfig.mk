@@ -303,3 +303,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
 include vendor/qcom/lahaina/BoardConfigVendor.mk
+include vendor/qcom/lahaina-firmware/BoardConfigVendor.mk
