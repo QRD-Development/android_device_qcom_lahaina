@@ -161,6 +161,9 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     sound_trigger.primary.lahaina
 
+PRODUCT_PACKAGES += \
+    libaudioroute.vendor
+
 # Authsecret
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0.vendor
@@ -469,6 +472,15 @@ PRODUCT_PACKAGES += \
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
+PRODUCT_PACKAGES += \
+    liblz4.vendor \
+    libssl.vendor \
+    libcurl.vendor \
+    libjsoncpp.vendor \
+    libsqlite.vendor \
+    libpng.vendor \
+    libutilscallstack.vendor
 
 # Shipping API
 BOARD_SHIPPING_API_LEVEL := 30
