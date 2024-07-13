@@ -1,4 +1,4 @@
-# All the blobs are from extracted from LA.UM.9.14.r1-22000-LAHAINA.QSSI12.0
+# All the blobs are from extracted from LA.UM.9.14.1.r1-13000-QCM6490.QSSI13.0
 
 # ACDB
 vendor/etc/acdbdata/CDP/CDP_Bluetooth_cal.acdb
@@ -640,6 +640,7 @@ vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libembmsservice.so
+vendor/lib64/libesepmconfig.so
 vendor/lib64/libnetmgr_common.so
 vendor/lib64/libnetmgr_nr_fusion.so
 vendor/lib64/libnetmgr_rmnet_ext.so
@@ -662,6 +663,13 @@ vendor/firmware/ipa_fws.b03
 vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
+vendor/firmware/yupik_ipa_fws.b00
+vendor/firmware/yupik_ipa_fws.b01
+vendor/firmware/yupik_ipa_fws.b02
+vendor/firmware/yupik_ipa_fws.b03
+vendor/firmware/yupik_ipa_fws.b04
+vendor/firmware/yupik_ipa_fws.elf
+vendor/firmware/yupik_ipa_fws.mdt
 
 # Diag
 vendor/bin/diag-router
@@ -785,17 +793,36 @@ vendor/lib64/libmmosal.so
 vendor/bin/hw/qconfigservice
 vendor/etc/init/qconfig.rc
 vendor/etc/media/video_system_specs.json
+vendor/etc/media_lahaina/video_system_specs.json
+vendor/etc/media_shima_v1/video_system_specs.json
+vendor/etc/media_shima_v2/video_system_specs.json
+vendor/etc/media_shima_v3/video_system_specs.json
+vendor/etc/media_yupik_iot/video_system_specs.json
+vendor/etc/media_yupik_v0/video_system_specs.json
+vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_lahaina.xml
 vendor/etc/media_codecs_lahaina_vendor.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_codecs_performance_lahaina.xml
 vendor/etc/media_codecs_performance_lahaina_vendor.xml
+vendor/etc/media_codecs_performance_shima_v1.xml
+vendor/etc/media_codecs_performance_shima_v2.xml
+vendor/etc/media_codecs_performance_shima_v3.xml
+vendor/etc/media_codecs_performance_yupik_iot.xml
+vendor/etc/media_codecs_performance_yupik_v0.xml
+vendor/etc/media_codecs_performance_yupik_v1.xml
 vendor/etc/media_lahaina/video_system_specs.json
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles_lahaina.xml
 vendor/etc/media_profiles_lahaina_vendor.xml
+vendor/etc/media_profiles_shima_v1.xml
+vendor/etc/media_profiles_shima_v2.xml
+vendor/etc/media_profiles_shima_v3.xml
+vendor/etc/media_profiles_yupik_iot.xml
+vendor/etc/media_profiles_yupik_v0.xml
+vendor/etc/media_profiles_yupik_v1.xml
 vendor/etc/media_profiles_vendor.xml
 vendor/lib/libqc2vppfilter.so
 vendor/lib/libqconfigclient.so
@@ -940,6 +967,8 @@ vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.5.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.7.so
+vendor/lib64/vendor.qti.hardware.radio.ims@1.8.so
+vendor/lib64/vendor.qti.hardware.radio.ims@1.9.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.1.so
