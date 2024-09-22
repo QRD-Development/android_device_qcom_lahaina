@@ -59,6 +59,9 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libcrypto-v33.so" "${2}" || "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "$2"
             ;;
+        vendor/etc/media_codecs.xml|vendor/etc/media_codecs_lahaina.xml|vendor/etc/media_codecs_lahaina_vendor.xml|vendor/etc/media_codecs_performance.xml|vendor/etc/media_codecs_performance_lahaina.xml|vendor/etc/media_codecs_performance_lahaina_vendor.xml|vendor/etc/media_codecs_performance_shima_v1.xml|vendor/etc/media_codecs_performance_shima_v2.xml|vendor/etc/media_codecs_performance_shima_v3.xml|vendor/etc/media_codecs_performance_yupik_iot.xml|vendor/etc/media_codecs_performance_yupik_v0.xml|vendor/etc/media_codecs_performance_yupik_v1.xml)
+            sed -Ei "/media_codecs_(google_audio|google_telephony|vendor_audio)/d" "${2}"
+            ;;
      esac
 }
 
