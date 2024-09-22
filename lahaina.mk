@@ -154,6 +154,9 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd-odm.rc
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := false
+
 # Kernel modules install path
 KERNEL_MODULES_INSTALL := dlkm
 KERNEL_MODULES_OUT := $(OUT_DIR)/target/product/lahaina/$(KERNEL_MODULES_INSTALL)/lib/modules
