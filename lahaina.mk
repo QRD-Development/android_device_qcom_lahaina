@@ -220,5 +220,8 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/qcom/qrd/lahaina/lahaina-vendor.mk)
 
 # WLAN
+PRODUCT_PACKAGES += \
+    firmware_WCNSS_qcom_cfg.ini_symlink
+
 PRODUCT_COPY_FILES += \
     device/qcom/wlan/lahaina/WCNSS_qcom_cfg_wlan.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
