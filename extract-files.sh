@@ -1,7 +1,8 @@
 #!/bin/bash
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2021 The LineageOS Project
+# SPDX-FileCopyrightText: 2016 The CyanogenMod Project
+# SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+# SPDX-FileCopyrightText: 2022 Paranoid Android
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -39,7 +40,8 @@ while [ "${#}" -gt 0 ]; do
                 KANG="--kang"
                 ;;
         -s | --section )
-                SECTION="${2}"; shift
+                SECTION="${2}"
+                shift
                 CLEAN_VENDOR=false
                 ;;
         * )
@@ -60,9 +62,19 @@ function blob_fixup() {
             grep -q "libcrypto_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
         vendor/etc/media_codecs.xml|vendor/etc/media_codecs_lahaina.xml|vendor/etc/media_codecs_lahaina_vendor.xml|vendor/etc/media_codecs_performance.xml|vendor/etc/media_codecs_performance_lahaina.xml|vendor/etc/media_codecs_performance_lahaina_vendor.xml|vendor/etc/media_codecs_performance_shima_v1.xml|vendor/etc/media_codecs_performance_shima_v2.xml|vendor/etc/media_codecs_performance_shima_v3.xml|vendor/etc/media_codecs_performance_yupik_iot.xml|vendor/etc/media_codecs_performance_yupik_v0.xml|vendor/etc/media_codecs_performance_yupik_v1.xml)
+            [ "$2" = "" ] && return 0
             sed -Ei "/media_codecs_(google_audio|google_c2|google_telephony|vendor_audio)/d" "${2}"
             ;;
-     esac
+     *)
+            return 1
+            ;;
+    esac
+
+    return 0
+}
+
+function blob_fixup_dry() {
+    blob_fixup "$1" ""
 }
 
 # Initialize the helper
