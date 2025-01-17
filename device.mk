@@ -349,7 +349,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.qti
+    android.hardware.light-service.lineage
 
 # Media
 PRODUCT_COPY_FILES += \
