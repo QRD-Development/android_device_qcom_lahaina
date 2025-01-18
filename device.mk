@@ -613,9 +613,6 @@ PRODUCT_PACKAGES += \
     libpng.vendor \
     libwfdaac_vendor
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # WiFi firmware symlinks
 PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink \
