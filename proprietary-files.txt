@@ -1044,6 +1044,7 @@ vendor/lib64/libTrustedUITZ.so
 vendor/lib64/libTrustedUIVM.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libsi.so
+vendor/lib64/libtrustedapploader.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.0.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.1.so
