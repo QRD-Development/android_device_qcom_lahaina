@@ -184,7 +184,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 TARGET_COMMON_QTI_COMPONENTS := \
     all \
     charging \
-    dsprpcd \
     keymaster
 
 # Sensors
