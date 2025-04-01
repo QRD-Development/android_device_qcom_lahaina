@@ -15,6 +15,8 @@ from extract_utils.main import (
 )
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/bin/wfdservice': blob_fixup()
+        .add_needed('libwfdservice_shim_v1.so'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so'),
     ('vendor/etc/libnfc-mtp-SN100.conf', 'vendor/etc/libnfc-nxp.conf', 'vendor/etc/libnfc-qrd-SN100.conf'): blob_fixup()
