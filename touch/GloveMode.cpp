@@ -3,39 +3,48 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "GloveModeService"
-
 #include "GloveMode.h"
 
-#include <fstream>
+#include <android-base/file.h>
+#include <android-base/logging.h>
 
+using ::android::base::ReadFileToString;
+using ::android::base::WriteStringToFile;
+
+namespace {
+
+constexpr const char* kGloveModePath =
+        "/sys/devices/platform/soc/990000.i2c/i2c-0/0-0038/fts_glove_mode";
+
+}  // namespace
+
+namespace aidl {
 namespace vendor {
 namespace lineage {
 namespace touch {
-namespace V1_0 {
-namespace implementation {
 
-const std::string kGloveModePath = "/sys/devices/platform/soc/990000.i2c/i2c-0/0-0038/fts_glove_mode";
+ndk::ScopedAStatus GloveMode::getEnabled(bool* _aidl_return) {
+    std::string value;
 
-Return<bool> GloveMode::isEnabled() {
-    std::ifstream file(kGloveModePath);
-    bool enabled;
+    if (!ReadFileToString(kGloveModePath, &value) || value.empty()) {
+        LOG(ERROR) << "Failed to read current GloveMode state";
+        return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
+    }
 
-    file >> enabled;
-
-    return enabled;
+    *_aidl_return = value[0] != '0';
+    return ndk::ScopedAStatus::ok();
 }
 
-Return<bool> GloveMode::setEnabled(bool enabled) {
-    std::ofstream file(kGloveModePath);
+ndk::ScopedAStatus GloveMode::setEnabled(bool enabled) {
+    if (!WriteStringToFile(enabled ? "1" : "0", kGloveModePath, true)) {
+        LOG(ERROR) << "Failed to write GloveMode state";
+        return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
+    }
 
-    file << enabled << std::flush;
-
-    return !file.fail();
+    return ndk::ScopedAStatus::ok();
 }
 
-}  // namespace implementation
-}  // namespace V1_0
 }  // namespace touch
 }  // namespace lineage
 }  // namespace vendor
+}  // namespace aidl
