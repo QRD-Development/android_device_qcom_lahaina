@@ -19,3 +19,6 @@ persist.vendor.thermal.config=/vendor/etc/thermal-engine.conf
 
 # Logs
 persist.log.tag.OpenGLRenderer=S
+
+# eBPF
+ro.bpf.kver_override=5.10.239
