@@ -18,14 +18,11 @@ from extract_utils.main import (
 )
 
 blob_fixups: blob_fixups_user_type = {
-    'system_ext/bin/wfdservice': blob_fixup()
-        .add_needed('libwfdservice_shim.so'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so'),
-        .add_needed('libinput_shim.so'),
     'system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so': blob_fixup()
         .add_needed('libprotobuf-cpp-full-v29.so')
         .add_needed('libprotobuf-cpp-full-21.7.so'),
+    'system_ext/lib64/libwfdnative.so' : blob_fixup()
+        .add_needed('libinput_shim.so'),
     ('vendor/etc/libnfc-mtp-SN100.conf', 'vendor/etc/libnfc-nxp.conf', 'vendor/etc/libnfc-qrd-SN100.conf'): blob_fixup()
         .regex_replace('(NXPLOG_.*_LOGLEVEL)=0x03', '\\1=0x02')
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
