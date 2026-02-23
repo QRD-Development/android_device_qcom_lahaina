@@ -4,10 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-from extract_utils.file import File
 from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
+)
+from extract_utils.fixups_lib import (
+    lib_fixups,
+    lib_fixups_user_type,
 )
 from extract_utils.main import (
     ExtractUtils,
@@ -19,6 +22,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libwfdservice_shim.so'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so'),
+        .add_needed('libinput_shim.so'),
+    'system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so': blob_fixup()
+        .add_needed('libprotobuf-cpp-full-v29.so')
+        .add_needed('libprotobuf-cpp-full-21.7.so'),
     ('vendor/etc/libnfc-mtp-SN100.conf', 'vendor/etc/libnfc-nxp.conf', 'vendor/etc/libnfc-qrd-SN100.conf'): blob_fixup()
         .regex_replace('(NXPLOG_.*_LOGLEVEL)=0x03', '\\1=0x02')
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
@@ -33,13 +40,44 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libsnapdragoncolor-manager.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/lib64/libsuntory.so': blob_fixup()
+        .add_needed('libprotobuf-cpp-full-v29.so'),
 }  # fmt: skip
+
+
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    (
+        'com.qualcomm.qti.dpm.api@1.0',
+        'libmmosal',
+        'vendor.qti.diaghal@1.0',
+        'vendor.qti.hardware.qccsyshal@1.0',
+        'vendor.qti.hardware.qccvndhal@1.0',
+        'vendor.qti.hardware.wifidisplaysession@1.0',
+        'vendor.qti.imsrtpservice@3.0',
+    ): lib_fixup_vendor_suffix,
+}
+
+namespace_imports = [
+    'device/qcom/lahaina',
+    'hardware/qcom-caf/sm8350',
+    'hardware/qcom-caf/wlan',
+    'vendor/qcom/opensource/commonsys-intf/display',
+    'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/opensource/display',
+]
 
 module = ExtractUtilsModule(
     'lahaina',
     'qcom',
-    add_firmware_proprietary_file=True,
     blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
+    namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':

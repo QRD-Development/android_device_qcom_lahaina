@@ -1,3 +1,0 @@
-# Firmware from https://github.com/QRD-Development/abl/tree/fbaeff2deab2273f74e577f305c09d7648633a88
-
-abl.img;AB
