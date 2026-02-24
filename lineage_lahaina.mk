@@ -14,10 +14,13 @@ $(call inherit-product, device/qcom/lahaina/device.mk)
 # Inherit from the Lineage configuration.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_BRAND := qti
+# Inherit AviumUI configurations.
+-include device/qcom/lahaina/avium_lahaina.mk
+
+PRODUCT_BRAND := Qualcomm
 PRODUCT_DEVICE := lahaina
-PRODUCT_MANUFACTURER := QUALCOMM
-PRODUCT_MODEL := Lahaina for arm64
+PRODUCT_MANUFACTURER := Qualcomm
+PRODUCT_MODEL := qrd8350
 PRODUCT_NAME := lineage_lahaina
 
 PRODUCT_SYSTEM_NAME := lahaina
